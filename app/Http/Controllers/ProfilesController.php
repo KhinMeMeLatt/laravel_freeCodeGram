@@ -35,11 +35,13 @@ class ProfilesController extends Controller
             $imagePath = request('image')->store('profile','public');
             $image = Image::make(public_path("storage/{$imagePath}"))->fit(1200,1200);
             $image->save();
+
+            $imageArray = ['image'=>$imagePath];
         }
 
         auth()->user()->profile->update(array_merge(
             $data,
-            ['image'=>$imagePath]
+            $imageArray ?? [] //check imageArray is empty or not. If it is empty, it will not override the data array
         ));
 
         return redirect("/profile/{$user->id}");
