@@ -40,7 +40,7 @@ git clone https://github.com/KhinMeMeLatt/laravel_freeCodeGram.git
 Then change your directory to the project you have cloned
 
 ```
-cd freeCodeGram
+cd laravel_freeCodeGram
 ```
 
 To run the project, type:
