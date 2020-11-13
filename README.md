@@ -10,7 +10,7 @@
 # freeCodeGram
 A replica of Instagram using Laravel Framework
 
-![alt text](https://github.com/KhinMeMeLatt/laravel_freeCodeGram/blob/main/screenshot.JPG)
+![alt text](https://github.com/KhinMeMeLatt/laravel_freeCodeGram/blob/main/Project_Screenshot.JPG)
 
 ## Getting Started
 
