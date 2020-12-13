@@ -11,7 +11,9 @@
                 <div class="d-flex align-items-center pb-3">
                     <div class="h4">{{$user->username}}</div>
 
-                    <follow-button user-id='{{ $user->id }}' follows={{ $follows }}></follow-button>
+                    @unless (auth()->user()->is($user))  
+                        <follow-button user-id='{{ $user->id }}' follows={{ $follows }}></follow-button>
+                    @endunless
                 </div>
                 
 
